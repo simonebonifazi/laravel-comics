@@ -73,3 +73,12 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('mainnav.shop');
 })->name('shop');
+
+//comic
+Route::get('/comic', function () {
+
+    $comics = config('comics');
+    $comic = $comics[0];
+
+    return view('comic', compact('comic'));
+})->name('comic');
