@@ -11,7 +11,8 @@
     <div class="bg">
         @include('includes.header')
         <main class="bg">
-            @include('includes.main')
+            @yield('main-content')
+            <!-- @include('includes.main') -->
 
         </main>
         @include('includes.footertop')
@@ -25,6 +26,3 @@
 </body>
 
 </html>
-
-//!!TODO aggiungere e ciclare l'array tramite config_
-//?? gestione main
