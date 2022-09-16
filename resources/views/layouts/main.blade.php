@@ -10,7 +10,10 @@
     </noscript>
     <div class="bg">
         @include('includes.header')
-        @include('includes.main')
+        <main class="bg">
+            @include('includes.main')
+
+        </main>
         @include('includes.footertop')
         @include('includes.footerbottom')
 
@@ -22,3 +25,6 @@
 </body>
 
 </html>
+
+//!!TODO aggiungere e ciclare l'array tramite config_
+//?? gestione main
