@@ -26,50 +26,50 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $comics = config('comics');
-    return view('home', compact('comics'));
+    return view('mainnav.home', compact('comics'));
 })->name('/');
 
 //characters
 Route::get('/characters', function () {
-    return view('characters');
+    return view('mainnav.characters');
 })->name('characters');
 
 //movies
 Route::get('/movies', function () {
-    return view('movies');
+    return view('mainnav.movies');
 })->name('movies');
 
 //tv
 Route::get('/tv', function () {
-    return view('tv');
+    return view('mainnav.tv');
 })->name('tv');
 
 //games
 Route::get('/games', function () {
-    return view('games');
+    return view('mainnav.games');
 })->name('games');
 
 //collectibles
 Route::get('/collectibles', function () {
-    return view('collectibles');
+    return view('mainnav.collectibles');
 })->name('collectibles');
 
 //videos
 Route::get('/videos', function () {
-    return view('videos');
+    return view('mainnav.videos');
 })->name('videos');
 
 //fans
 Route::get('/fans', function () {
-    return view('fans');
+    return view('mainnav.fans');
 })->name('fans');
 
 //news
 Route::get('/news', function () {
-    return view('news');
+    return view('mainnav.news');
 })->name('news');
 
 //shop
 Route::get('/shop', function () {
-    return view('shop');
+    return view('mainnav.shop');
 })->name('shop');

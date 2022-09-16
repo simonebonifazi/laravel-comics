@@ -12,8 +12,6 @@
         @include('includes.header')
         <main class="bg">
             @yield('main-content')
-            <!-- @include('includes.main') -->
-
         </main>
         @include('includes.footertop')
         @include('includes.footerbottom')
