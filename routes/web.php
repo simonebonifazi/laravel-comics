@@ -29,6 +29,17 @@ Route::get('/', function () {
     return view('comics.index', compact('comics'));
 })->name('comics.index');
 
+//comic
+//! adottiamo index poichè non c'è id nell'arry, altrimmenti sempre tramite id
+Route::get('/comics/{index}', function ($index) {
+
+    $comics = config('comics');
+    //?? controlli temporanei, poi li farà il db
+    if(!is_numeric($index) || $index < 0 || $index >= count($comics)) abort(404);
+        $comic = $comics[$index];
+    return view('comics.show', compact('comic'));
+})->name('comics.show');
+
 //characters
 Route::get('/characters', function () {
     return view('characters');
@@ -73,12 +84,3 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
-
-//comic
-Route::get('/comic', function () {
-
-    $comics = config('comics');
-    $comic = $comics[0];
-
-    return view('comics.show', compact('comic'));
-})->name('comics.show');
