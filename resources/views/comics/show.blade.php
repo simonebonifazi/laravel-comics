@@ -26,12 +26,12 @@
             <h3> TALENT </h3>
             <div>art by:
                 @foreach($comic['artists'] as $artist)
-                <span> {{$artist}} </span>
+                <span> {{$artist}} @if($loop->last) . @else , @endif </span>
                 @endforeach
             </div>
             <div>written by:
                 @foreach($comic['writers'] as $writer)
-                <span> {{$writer}} </span>
+                <span> {{$writer}} @if($loop->last) . @else , @endif </span>
                 @endforeach
             </div>
         </div>
@@ -42,11 +42,16 @@
             <div>On Sale Date: {{$comic['sale_date']}}</div>
         </div>
     </section>
+
+
     <footer>
         <div class="container">
             <div class="dc">
                 <h5></h5>
                 <i></i>
+                <figure>
+                    <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="icons">
+                </figure>
             </div>
             <div class="shop-dc">
                 <h5></h5>
