@@ -30,7 +30,7 @@ Route::get('/', function () {
 })->name('comics.index');
 
 //comic
-//! adottiamo index poichè non c'è id nell'arry, altrimmenti sempre tramite id
+//! adottiamo index poichè non c'è id nell'arry comics, altrimmenti sempre tramite id
 Route::get('/comics/{index}', function ($index) {
 
     $comics = config('comics');

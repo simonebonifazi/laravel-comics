@@ -24,8 +24,16 @@
     <section id="more-info">
         <div class="talent">
             <h3> TALENT </h3>
-            <div>art by: {{$comic['description']}}</div>
-            <div>written by: {{$comic['price']}}</div>
+            <div>art by:
+                @foreach($comic['artists'] as $artist)
+                <span> {{$artist}} </span>
+                @endforeach
+            </div>
+            <div>written by:
+                @foreach($comic['writers'] as $writer)
+                <span> {{$writer}} </span>
+                @endforeach
+            </div>
         </div>
         <div class="specs">
             <h3> SPECS </h3>
