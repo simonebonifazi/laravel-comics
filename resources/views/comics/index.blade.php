@@ -7,12 +7,12 @@
     <ul class="card-container d-flex">
         @foreach($comics as $index => $comic)
         <li class="card">
-            <figure>
-                <a href="#">
+            <a href="{{ route('comics.show') }}">
+                <figure>
                     <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                </a>
-            </figure>
-            <figcaption>{{ $comic['title'] }}</figcaption>
+                </figure>
+                <figcaption>{{ $comic['title'] }}</figcaption>
+            </a>
         </li>
         @endforeach
     </ul>
