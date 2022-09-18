@@ -6,8 +6,8 @@
 @section('main-content')
 <div id="show">
 
-    <header id="head">
-    </header>
+    <div id="head">
+    </div>
     <figure>
         <span>
             {{ $comic['type'] }}
@@ -17,7 +17,7 @@
     </figure>
     <div class="container">
         <section id="presentation">
-            <h1>{{ $comic['title'] }}</h1>
+            <h1> {{ $comic['title'] }}</h1>
             <div class="isavaible">
                 <span> U.S. Price: {{$comic['price']}}</span>
             </div>

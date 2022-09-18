@@ -174,4 +174,23 @@ header li {
   position: relative;
   left: 40px;
   bottom: 325px;
+  border: 1px solid #fff;
+  width: 190px;
+}
+#show figure span {
+  background-color: #0282F9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  padding: 4px;
+}
+#show figure div {
+  padding: 4px;
+  background-color: #2391f8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
