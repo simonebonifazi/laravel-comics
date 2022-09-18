@@ -10,11 +10,7 @@
     </noscript>
     <div class="bg">
         @include('includes.header')
-        <!-- da trsportare poi tramite include -->
-        <section id="jumbotron">
-
-        </section>
-        <!-- da trsportare poi tramite include -->
+        @include('includes.jumbo')
         <main class="bg">
             @yield('main-content')
         </main>
