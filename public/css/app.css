@@ -164,7 +164,7 @@ header li {
 #show {
   background-color: #fff;
 }
-#show #head {
+#show .head {
   height: 100px;
   background-color: #0282F9;
   position: relative;
@@ -193,4 +193,9 @@ header li {
   left: 0;
   right: 0;
   text-align: center;
+}
+#show #presentation h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  color: blue;
 }

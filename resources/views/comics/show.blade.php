@@ -6,7 +6,7 @@
 @section('main-content')
 <div id="show">
 
-    <div id="head">
+    <div class="head">
     </div>
     <figure>
         <span>

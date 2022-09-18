@@ -1,7 +1,7 @@
 #show{
     background-color: #fff;   
     
-    #head{
+    .head{
         height: 100px;
         background-color: #0282F9;
         position: relative;
@@ -29,6 +29,14 @@
             left: 0;
             right: 0;
             text-align: center;
+        }
+    }
+    // section presentation
+    #presentation{
+        h1{
+            text-transform: uppercase;
+            font-size: 32px;
+            color: blue;
         }
     }
 }
