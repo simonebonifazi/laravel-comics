@@ -10,6 +10,9 @@
     </noscript>
     <div class="bg">
         @include('includes.header')
+        <section id="jumbotron">
+
+        </section>
         <main class="bg">
             @yield('main-content')
         </main>

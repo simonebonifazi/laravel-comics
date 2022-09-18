@@ -153,3 +153,10 @@ header li {
   font-size: 12px;
   color: #000;
 }
+
+#jumbotron {
+  height: 400px;
+  background-image: url("../../public/images/jumbotron.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
