@@ -160,3 +160,18 @@ header li {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+#show {
+  background-color: #fff;
+}
+#show #head {
+  height: 100px;
+  background-color: #0282F9;
+  position: relative;
+  margin-top: 0;
+}
+#show figure {
+  position: relative;
+  left: 40px;
+  bottom: 325px;
+}

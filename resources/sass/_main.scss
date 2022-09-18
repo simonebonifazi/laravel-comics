@@ -1,25 +1,24 @@
+.bg {
+    color: #fff;
+}
 
-    .bg {
-        color: #fff;
-    }
-
-    .card-container {
+.card-container {
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
 
         padding: 40px 0;
-    }
+}
 
-        .card {
-            flex-basis: calc(100% / 6);
-            padding: 10px;
-            height: 200px;
-    
-            img {
-                height: 125px;
-                width: 125px;
-                object-position: top;
-                object-fit: cover;
-            }
+.card {
+    flex-basis: calc(100% / 6);
+    padding: 10px;
+    height: 200px;
+
+    img {
+            height: 125px;
+            width: 125px;
+            object-position: top;
+            object-fit: cover;
         }
+}

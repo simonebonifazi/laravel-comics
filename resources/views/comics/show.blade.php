@@ -4,7 +4,10 @@
 
 
 @section('main-content')
-<header>
+<div id="show">
+
+    <header id="head">
+    </header>
     <figure>
         <span>
             {{ $comic['type'] }}
@@ -12,60 +15,60 @@
         <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
         <div> VIEW GALLERY </div>
     </figure>
-</header>
-<div class="container">
-    <section id="presentation">
-        <h1>{{ $comic['title'] }}</h1>
-        <div class="isavaible">
-            <span> U.S. Price: {{$comic['price']}}</span>
-        </div>
-        <p> {{$comic['description']}}</p>
-    </section>
-    <section id="more-info">
-        <div class="talent">
-            <h3> TALENT </h3>
-            <div>art by:
-                @foreach($comic['artists'] as $artist)
-                <span> {{$artist}} @if($loop->last) . @else , @endif </span>
-                @endforeach
+    <div class="container">
+        <section id="presentation">
+            <h1>{{ $comic['title'] }}</h1>
+            <div class="isavaible">
+                <span> U.S. Price: {{$comic['price']}}</span>
             </div>
-            <div>written by:
-                @foreach($comic['writers'] as $writer)
-                <span> {{$writer}} @if($loop->last) . @else , @endif </span>
-                @endforeach
+            <p> {{$comic['description']}}</p>
+        </section>
+        <section id="more-info">
+            <div class="talent">
+                <h3> TALENT </h3>
+                <div>art by:
+                    @foreach($comic['artists'] as $artist)
+                    <span> {{$artist}} @if($loop->last) . @else , @endif </span>
+                    @endforeach
+                </div>
+                <div>written by:
+                    @foreach($comic['writers'] as $writer)
+                    <span> {{$writer}} @if($loop->last) . @else , @endif </span>
+                    @endforeach
+                </div>
             </div>
-        </div>
-        <div class="specs">
-            <h3> SPECS </h3>
-            <div>Series: {{ $comic['series']}}</div>
-            <div>U.S. Price: {{$comic['price']}}</div>
-            <div>On Sale Date: {{$comic['sale_date']}}</div>
-        </div>
-    </section>
+            <div class="specs">
+                <h3> SPECS </h3>
+                <div>Series: {{ $comic['series']}}</div>
+                <div>U.S. Price: {{$comic['price']}}</div>
+                <div>On Sale Date: {{$comic['sale_date']}}</div>
+            </div>
+        </section>
 
 
-    <footer>
-        <div class="container">
-            <div class="dc">
-                <h5></h5>
-                <i></i>
-                <figure>
-                    <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="icons">
-                </figure>
+        <footer>
+            <div class="container">
+                <div class="dc">
+                    <h5></h5>
+                    <i></i>
+                    <figure>
+                        <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="icons">
+                    </figure>
+                </div>
+                <div class="shop-dc">
+                    <h5></h5>
+                    <i></i>
+                </div>
+                <div class="locator">
+                    <h5></h5>
+                    <i></i>
+                </div>
+                <div class="subscription">
+                    <h5></h5>
+                    <i></i>
+                </div>
             </div>
-            <div class="shop-dc">
-                <h5></h5>
-                <i></i>
-            </div>
-            <div class="locator">
-                <h5></h5>
-                <i></i>
-            </div>
-            <div class="subscription">
-                <h5></h5>
-                <i></i>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </div>
 @endsection
