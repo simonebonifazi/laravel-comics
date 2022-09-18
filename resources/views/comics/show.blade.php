@@ -8,7 +8,7 @@
 
     <div class="head">
     </div>
-    <figure>
+    <figure class="preview">
         <span>
             {{ $comic['type'] }}
         </span>
@@ -17,11 +17,18 @@
     </figure>
     <div class="container">
         <section id="presentation">
-            <h1> {{ $comic['title'] }}</h1>
-            <div class="isavaible">
-                <span> U.S. Price: {{$comic['price']}}</span>
+            <div>
+
+                <h1> {{ $comic['title'] }}</h1>
+                <div class="isavaible">
+                    <span> U.S. Price: {{$comic['price']}}</span>
+                </div>
+                <p> {{$comic['description']}}</p>
+
             </div>
-            <p> {{$comic['description']}}</p>
+            <figure>
+                <img src="{{asset('images/adv.jpg')}}" alt="adv">
+            </figure>
         </section>
         <section id="more-info">
             <div class="talent">

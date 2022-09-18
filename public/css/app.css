@@ -170,14 +170,14 @@ header li {
   position: relative;
   margin-top: 0;
 }
-#show figure {
+#show .preview {
   position: relative;
   left: 40px;
   bottom: 325px;
   border: 1px solid #fff;
   width: 190px;
 }
-#show figure span {
+#show .preview span {
   background-color: #0282F9;
   position: absolute;
   top: 0;
@@ -185,7 +185,7 @@ header li {
   text-transform: uppercase;
   padding: 4px;
 }
-#show figure div {
+#show .preview div {
   padding: 4px;
   background-color: #2391f8;
   position: absolute;
@@ -193,6 +193,12 @@ header li {
   left: 0;
   right: 0;
   text-align: center;
+}
+#show #presentation {
+  display: flex;
+}
+#show #presentation figure img {
+  max-width: none;
 }
 #show #presentation h1 {
   text-transform: uppercase;
