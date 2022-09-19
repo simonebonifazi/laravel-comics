@@ -14,7 +14,7 @@
         border: 1px solid #fff;
         width: 190px;
        span{
-            background-color: #0282F9;
+            background-color: #00A9D9;
             position: absolute;
             top: 0;
             left: 0;
@@ -23,7 +23,7 @@
         }
         div{
             padding: 4px;
-            background-color: #2391f8;
+            background-color: #00A9D9;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -31,19 +31,84 @@
             text-align: center;
         }
     }
+    //centered 
+    .container{
+            bottom: 225px;
+                right: 120px;
+                position: relative;
+    }
     // section presentation
     #presentation{
         display: flex;
         figure{
             
         img{
-            max-width: none;
+            width: 2000px;
+            position: relative;
             }
+
+        p{
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #7f8f9f;
+        }
         }
         h1{
             text-transform: uppercase;
-            font-size: 32px;
-            color: blue;
+            font-size: 2rem;
+            color: #03405E;
+        }
+        .isavaible{
+            width: 95%;
+            height: 3rem;
+            margin-top: 2rem;
+
+            background-color: #55BA59;
+            
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #000;
+            .divisor{
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                width: 80%;
+                height: 100%;
+                
+                padding: 1rem;
+                border-right: 1px solid #000;
+            }
+            .check-availability{
+                padding: 0.5rem;
+            }
+
+            span{
+                color: #AAF993;
+                border: none;
+            }
+        }
+        .description{
+            color: #000;
+            line-height: 1.8rem;
+            padding: 1.1rem 4.1rem 2.5rem 0rem;
+                
+        }
+    }
+    //more info section
+    #more-info{
+        background-color: #F6F6F6;
+        position: relative;
+        bottom: 215px;
+        left: 0;
+        .container{
+            top: 0;
+            bottom: 0;
         }
     }
 }
